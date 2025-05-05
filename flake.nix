@@ -38,6 +38,7 @@
           pkgs.git
           pkgs.jq # Useful for JSON manipulation
           pkgs.curl
+					pkgs.openssh
         ];
 
       in
