@@ -28,6 +28,24 @@ var (
 
 	// ErrBadRequest indicates a malformed or invalid request from the client.
 	ErrBadRequest = errors.New("bad request: invalid request format or parameters")
+
+	// ErrGameNotFound is a specific error for when a game is not found.
+	ErrGameNotFound = errors.New("game not found")
+
+	// ErrPlayerNotFoundInGame is for when a player isn't part of a game.
+	ErrPlayerNotFoundInGame = errors.New("player not found in game")
+
+	// ErrGameNotJoinable indicates a game cannot be joined (e.g., ongoing, full).
+	ErrGameNotJoinable = errors.New("game is not joinable")
+
+	// ErrGameNotOngoing indicates an action cannot be performed because the game is not ongoing.
+	ErrGameNotOngoing = errors.New("game is not ongoing")
+
+	// ErrNoMoreNumbers indicates all numbers have been drawn.
+	ErrNoMoreNumbers = errors.New("no more numbers to draw")
+
+	// ErrInvalidBingoClaim indicates a bingo claim was not valid.
+	ErrInvalidBingoClaim = errors.New("invalid bingo claim")
 )
 
 // Consider adding custom error types if you need to attach more context,
